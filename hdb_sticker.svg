@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="100%" height="100%">
+  <!-- Cute Pastel Singapore HDB Block Sticker -->
+  <defs>
+    <filter id="hdb-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="3" dy="5" stdDeviation="0" flood-color="#334155" flood-opacity="0.18" />
+    </filter>
+  </defs>
+
+  <g filter="url(#hdb-shadow)">
+    <!-- White Sticker Cutout Border -->
+    <path d="M 40 25 C 40 18 48 12 56 12 L 104 12 C 112 12 120 18 120 25 L 120 138 C 120 146 112 152 104 152 L 56 152 C 48 152 40 146 40 138 Z" 
+          fill="#ffffff" stroke="#1e293b" stroke-width="7" stroke-linejoin="round" />
+    
+    <!-- Building Body (Pastel Sky Blue & Coral) -->
+    <rect x="46" y="18" width="68" height="128" rx="8" fill="#bae6fd" stroke="#0284c7" stroke-width="3.5" />
+    
+    <!-- Top Roof Accent / Block Number Header -->
+    <rect x="46" y="18" width="68" height="22" rx="6" fill="#f43f5e" />
+    <!-- Block Number "26" -->
+    <text x="80" y="34" font-family="'Courier New', monospace" font-size="12" font-weight="900" fill="#ffffff" text-anchor="middle">SG '26</text>
+
+    <!-- Grid of Cute Windows -->
+    <!-- Row 1 -->
+    <rect x="54" y="48" width="14" height="14" rx="3" fill="#fef08a" stroke="#ca8a04" stroke-width="2" />
+    <rect x="74" y="48" width="12" height="14" rx="2" fill="#ffffff" stroke="#0284c7" stroke-width="2" />
+    <rect x="92" y="48" width="14" height="14" rx="3" fill="#fef08a" stroke="#ca8a04" stroke-width="2" />
+    
+    <!-- Row 2 -->
+    <rect x="54" y="70" width="14" height="14" rx="3" fill="#ffffff" stroke="#0284c7" stroke-width="2" />
+    <rect x="74" y="70" width="12" height="14" rx="2" fill="#fef08a" stroke="#ca8a04" stroke-width="2" />
+    <rect x="92" y="70" width="14" height="14" rx="3" fill="#ffffff" stroke="#0284c7" stroke-width="2" />
+
+    <!-- Row 3 -->
+    <rect x="54" y="92" width="14" height="14" rx="3" fill="#fef08a" stroke="#ca8a04" stroke-width="2" />
+    <rect x="74" y="92" width="12" height="14" rx="2" fill="#ffffff" stroke="#0284c7" stroke-width="2" />
+    <rect x="92" y="92" width="14" height="14" rx="3" fill="#fef08a" stroke="#ca8a04" stroke-width="2" />
+
+    <!-- Void Deck / Ground Floor Pillars -->
+    <rect x="46" y="122" width="68" height="24" fill="#fde68a" stroke="#d97706" stroke-width="2" />
+    <rect x="62" y="128" width="10" height="18" fill="#1e293b" rx="2" />
+    <rect x="88" y="128" width="10" height="18" fill="#1e293b" rx="2" />
+
+    <!-- Cute Little Plant on Balcony -->
+    <circle cx="56" cy="65" r="4" fill="#22c55e" />
+    <circle cx="60" cy="63" r="3.5" fill="#16a34a" />
+    
+    <!-- Floating Heart Cloud at Top Right -->
+    <path d="M 125 35 A 6 6 0 0 0 115 41 A 6 6 0 0 0 135 41 Q 135 48 125 55 Q 115 48 115 41" fill="#f43f5e" stroke="#ffffff" stroke-width="2" />
+  </g>
+</svg>

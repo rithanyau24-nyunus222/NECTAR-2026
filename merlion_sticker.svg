@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="100%" height="100%">
+  <!-- Cute Chibi Baby Merlion Sticker -->
+  <defs>
+    <filter id="merlion-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="3" dy="5" stdDeviation="0" flood-color="#334155" flood-opacity="0.18" />
+    </filter>
+  </defs>
+  
+  <g filter="url(#merlion-shadow)">
+    <!-- White Sticker Cutout Border -->
+    <path d="M 80 18 C 50 18 36 38 36 68 C 36 85 45 98 56 106 C 52 118 46 130 38 138 C 55 142 80 138 98 122 C 115 124 130 112 130 92 C 130 68 118 18 80 18 Z" 
+          fill="#ffffff" stroke="#1e293b" stroke-width="6" stroke-linejoin="round" />
+    
+    <!-- Body & Fish Tail (Turquoise Mint) -->
+    <path d="M 68 85 C 60 100 52 115 42 128 C 58 132 82 126 95 114 C 98 102 96 90 92 82 Z" fill="#5eead4" stroke="#0f766e" stroke-width="3.5" />
+    <!-- Tail scales -->
+    <circle cx="68" cy="110" r="4" fill="#2dd4bf" />
+    <circle cx="78" cy="105" r="4" fill="#2dd4bf" />
+    <circle cx="72" cy="118" r="3.5" fill="#2dd4bf" />
+    
+    <!-- Lion Head (Soft Cream / Yellow) -->
+    <circle cx="80" cy="58" r="32" fill="#fef08a" stroke="#ca8a04" stroke-width="3.5" />
+    
+    <!-- Mane Tufts -->
+    <circle cx="52" cy="42" r="11" fill="#fef9c3" stroke="#ca8a04" stroke-width="3" />
+    <circle cx="68" cy="30" r="12" fill="#fef9c3" stroke="#ca8a04" stroke-width="3" />
+    <circle cx="92" cy="30" r="12" fill="#fef9c3" stroke="#ca8a04" stroke-width="3" />
+    <circle cx="108" cy="42" r="11" fill="#fef9c3" stroke="#ca8a04" stroke-width="3" />
+    
+    <!-- Cute Eyes -->
+    <ellipse cx="71" cy="56" rx="4.5" ry="6" fill="#1e293b" />
+    <ellipse cx="89" cy="56" rx="4.5" ry="6" fill="#1e293b" />
+    <circle cx="69.5" cy="53.5" r="2" fill="#ffffff" />
+    <circle cx="87.5" cy="53.5" r="2" fill="#ffffff" />
+    
+    <!-- Blush Cheeks -->
+    <ellipse cx="63" cy="64" rx="5" ry="3.5" fill="#fda4af" />
+    <ellipse cx="97" cy="64" rx="5" ry="3.5" fill="#fda4af" />
+    
+    <!-- Mouth Spouting Water -->
+    <ellipse cx="80" cy="65" rx="5" ry="4" fill="#ea580c" />
+    <!-- Water Jet -->
+    <path d="M 80 67 C 88 72 108 80 120 74 C 114 84 95 82 82 72 Z" fill="#38bdf8" stroke="#0284c7" stroke-width="2.5" />
+    <circle cx="124" cy="74" r="4" fill="#bae6fd" />
+    <circle cx="118" cy="84" r="3" fill="#bae6fd" />
+  </g>
+</svg>
