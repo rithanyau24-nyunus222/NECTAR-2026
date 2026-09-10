@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NECTAR'26 ✷ Singapore CPF Wealth & Housing Made Cute</title>
+  <meta name="description" content="NECTAR'26: The cute, whimsical, human-friendly Singapore CPF simulator. Model 2.5% OA, 4.0% SA, 1% bonus yield, and housing downpayment liquidity without the boring finance jargon!" />
+  
+  <!-- Whimsical Bubbly, Pixel & Modern Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@500;600;700;900&family=VT323&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Scrapbook Warm Paper Wrapper -->
+  <div class="scrapbook-wrapper">
+    
+    <!-- FLOATING BACKGROUND DECORATIVE STICKERS -->
+    <div class="decor-float-layer">
+      <img src="assets/stickers/goldstar_sticker.svg" alt="Gold Star" class="float-decor star-top-left" />
+      <img src="assets/stickers/goldstar_sticker.svg" alt="Gold Star" class="float-decor star-top-right" />
+      <img src="assets/stickers/orchid_sticker.svg" alt="Orchid" class="float-decor orchid-right" />
+      <img src="assets/stickers/goldstar_sticker.svg" alt="Gold Star" class="float-decor star-bottom-left" />
+    </div>
+
+    <!-- TOP WHIMSICAL NAVIGATION BAR -->
+    <header class="scrapbook-nav">
+      <div class="nav-brand">
+        <a href="#home" class="brand-link" id="brandHomeLink">
+          <span class="brand-logo-pill">
+            <span class="logo-emoji">🍯</span>
+            <span class="logo-text">NECTAR<span class="logo-bubble">'26</span></span>
+          </span>
+          <span class="brand-tagline">singapore cpf for humans ✷</span>
+        </a>
+      </div>
+
+      <!-- Navigation Tabs (Candy Pills) -->
+      <nav class="nav-tabs-container">
+        <button class="cute-tab active" data-page="home">🌸 The Nectar Club</button>
+        <button class="cute-tab" data-page="guide">📖 CPF 101 & Guide</button>
+        <button class="cute-tab" data-page="simulator">✨ Simulator Studio</button>
+        <button class="cute-tab" data-page="housing">🏡 Housing Check</button>
+        <button class="cute-tab" data-page="analytics">📊 Milestones</button>
+      </nav>
+
+      <!-- Status Pill -->
+      <div class="nav-action">
+        <a href="#simulator" class="cute-join-btn" id="btnTopSimulate">
+          <span class="pulse-sparkle">✦</span> Run Engine
+        </a>
+      </div>
+    </header>
+
+    <!-- MARQUEE RIBBON TICKER TAPE -->
+    <div class="marquee-ribbon-bar">
+      <div class="marquee-track">
+        <span>✦ WELCOME TO NECTAR'26 ✦ 2.5% ORDINARY ACCOUNT ✦ 4.0% SPECIAL ACCOUNT ✦ 1.0% EXTRA BONUS ON FIRST $60K ✦ 2026 $8,000 WAGE CAP ✦ KEEP $20K OA BUFFER ✦ 100% CUTE & JARGON-FREE ✦ </span>
+        <span>✦ WELCOME TO NECTAR'26 ✦ 2.5% ORDINARY ACCOUNT ✦ 4.0% SPECIAL ACCOUNT ✦ 1.0% EXTRA BONUS ON FIRST $60K ✦ 2026 $8,000 WAGE CAP ✦ KEEP $20K OA BUFFER ✦ 100% CUTE & JARGON-FREE ✦ </span>
+      </div>
+    </div>
+
+    <!-- MAIN SCRAPBOOK STAGE -->
+    <main class="scrapbook-stage">
+
+      <!-- ===================================================================
+           PAGE 1: THE NECTAR CLUB (Home Scrapbook Collage)
+           =================================================================== -->
+      <section class="scrapbook-page active" id="page-home">
+        
+        <!-- Hero Header with Mixed Playful Typography -->
+        <div class="scrapbook-hero">
+          
+          <!-- Cute Washi Tape Strip -->
+          <div class="washi-tape tape-hero">NECTAR'26 ✷ SINGAPORE CPF WEALTH & HOUSING</div>
+          
+          <div class="mixed-title-wrapper">
+            <h1 class="hero-mixed-title">
+              <span class="title-the">the</span>
+              <span class="title-pixel">N</span><span class="title-bubbly">ectar</span>
+              <span class="title-script">'26</span><span class="title-period">.</span>
+            </h1>
+          </div>
+
+
+          <p class="hero-friendly-sub">
+            The delightfully fun, human-friendly way to calculate your Singapore Central Provident Fund (CPF), grow your savings, and plan your dream home without tears!
+          </p>
+
+          <!-- STICKER COLLAGE ROW (Cute Singapore Icons - No Human Faces!) -->
+          <div class="sticker-collage-banner">
+            <div class="collage-item item-merlion" title="Chibi Baby Merlion!">
+              <img src="assets/stickers/merlion_sticker.svg" alt="Baby Merlion" class="sticker-img" />
+              <span class="sticker-caption">Chibi Merlion</span>
+            </div>
+
+            <div class="collage-item item-toast" title="Kaya Butter Toast & Soft Boiled Egg!">
+              <img src="assets/stickers/kayatoast_sticker.svg" alt="Kaya Toast" class="sticker-img" />
+              <span class="sticker-caption">Kaya & Kopi</span>
+            </div>
+
+            <div class="collage-item item-hdb" title="Cute Singapore HDB Flat!">
+              <img src="assets/stickers/hdb_sticker.svg" alt="HDB Block" class="sticker-img" />
+              <span class="sticker-caption">HDB Dream</span>
+            </div>
+
+            <div class="collage-item item-drink" title="Teh Tarik Boba Cup!">
+              <img src="assets/stickers/tehtarik_sticker.svg" alt="Teh Tarik" class="sticker-img" />
+              <span class="sticker-caption">Shiok Boba</span>
+            </div>
+
+            <div class="collage-item item-orchid" title="Singapore Orchid!">
+              <img src="assets/stickers/orchid_sticker.svg" alt="Singapore Orchid" class="sticker-img" />
+              <span class="sticker-caption">Vanda 🌸</span>
+            </div>
+          </div>
+
+          <!-- Hero Action Buttons -->
+          <div class="hero-bouncy-actions">
+            <button class="bouncy-btn btn-pink" id="btnLaunchSimHero">
+              Launch Simulator Studio 🚀
+            </button>
+            <button class="bouncy-btn btn-cream" id="btnReadGuideHero">
+              Read How It Works 📖
+            </button>
+          </div>
+        </div>
+
+        <!-- PASTEL CARDS SECTION: Read the latest from our CPF Insiders -->
+        <div class="insiders-section">
+          <div class="section-title-badge">
+            <span class="badge-icon">✦</span> WHAT YOU NEED TO KNOW
+          </div>
+          <h2 class="insiders-heading">Three Secrets Your Bank Never Tells You</h2>
+
+          <div class="pastel-cards-grid">
+            
+            <!-- Card 1: Butter Yellow -->
+            <div class="pastel-block-card card-butter">
+              <div class="washi-tape tape-yellow">RULE #1</div>
+              <span class="card-pill-tag">BONUS INTEREST</span>
+              <h3 class="card-headline">The $20,000 Buffer Secret ✨</h3>
+              <p class="card-desc">
+                Did you know? Leaving $20k in your Ordinary Account gives you <strong>3.5% risk-free interest</strong>. If you empty OA to $0 for your flat, you throw away over $3,700!
+              </p>
+              <button class="read-more-pill" data-page="guide">Read How It Works →</button>
+            </div>
+
+            <!-- Card 2: Strawberry Pink -->
+            <div class="pastel-block-card card-pink">
+              <div class="washi-tape tape-pink">RULE #2</div>
+              <span class="card-pill-tag">HOUSING CHECK</span>
+              <h3 class="card-headline">HDB vs Bank Downpayment 🏡</h3>
+              <p class="card-desc">
+                HDB concessionary loans require 20% downpayment (all CPF OA eligible), while Bank loans need 25% (min 5% cold hard cash). Stress-test your cash buffer before BTO!
+              </p>
+              <button class="read-more-pill" data-page="housing">Check Housing →</button>
+            </div>
+
+            <!-- Card 3: Sky Blue -->
+            <div class="pastel-block-card card-blue">
+              <div class="washi-tape tape-blue">RULE #3</div>
+              <span class="card-pill-tag">STATUTORY 2026</span>
+              <h3 class="card-headline">$8,000 Ordinary Wage Cap 📈</h3>
+              <p class="card-desc">
+                Singapore raised the CPF wage ceiling to $8,000 in 2026. More of your monthly salary earns government-backed compounding interest automatically!
+              </p>
+              <button class="read-more-pill" data-page="simulator">Simulate Your Pay →</button>
+            </div>
+
+            <!-- Card 4: Matcha Mint -->
+            <div class="pastel-block-card card-mint">
+              <div class="washi-tape tape-mint">RULE #4</div>
+              <span class="card-pill-tag">RETIREMENT GOALS</span>
+              <h3 class="card-headline">Milestone Forecast (BRS / FRS) 🎯</h3>
+              <p class="card-desc">
+                See exactly which calendar year you will reach the Basic Retirement Sum ($106.5k) and Full Retirement Sum ($213k). Retirement freedom on autopilot!
+              </p>
+              <button class="read-more-pill" data-page="analytics">View Milestones →</button>
+            </div>
+
+          </div>
+        </div>
+
+      </section>
+
+      <!-- ===================================================================
+           PAGE 2: HOW IT WORKS & GUIDE (Scrapbook CPF 101)
+           =================================================================== -->
+      <section class="scrapbook-page" id="page-guide">
+        <div class="page-title-banner">
+          <span class="banner-subtag">NO BORING FINANCIAL JARGON</span>
+          <h2 class="banner-title">CPF in 60 Seconds (Explained for Humans)</h2>
+          <p class="banner-desc">Up to 37% of your salary goes into CPF every single month. Here is where it goes and how to make every single cent work for you!</p>
+        </div>
+
+        <div class="guide-scrapbook-grid">
+          
+          <!-- The 3 Accounts (Butter Yellow Card) -->
+          <div class="guide-box-card card-butter">
+            <span class="cute-tag-pill">THE 3 ACCOUNTS</span>
+            <h3 class="guide-box-title">Where Does Your Monthly Salary Go?</h3>
+
+            <div class="account-candy-row">
+              <div class="candy-badge badge-blue">OA 2.5%</div>
+              <div class="candy-info">
+                <strong>Ordinary Account (OA)</strong>
+                <p>Used for home downpayments and monthly mortgage installments. Earns 2.5% p.a.</p>
+              </div>
+            </div>
+
+            <div class="account-candy-row">
+              <div class="candy-badge badge-gold">SA 4.0%</div>
+              <div class="candy-info">
+                <strong>Special Account (SA)</strong>
+                <p>Your high-yield retirement compounder. Money here multiplies safely at 4.0% p.a. guaranteed.</p>
+              </div>
+            </div>
+
+            <div class="account-candy-row">
+              <div class="candy-badge badge-pink">MA 4.0%</div>
+              <div class="candy-info">
+                <strong>Medisave Account (MA)</strong>
+                <p>Reserved for hospital bills, MediShield Life insurance, and medical safety net. Earns 4.0% p.a.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- The 1% Bonus Interest (Strawberry Pink Card) -->
+          <div class="guide-box-card card-pink">
+            <span class="cute-tag-pill pill-red">THE SECRET SAUCE</span>
+            <h3 class="guide-box-title">The Extra 1.0% Bonus Interest Rule</h3>
+            <p class="guide-lead-text">
+              The Singapore Government pays an <strong>extra 1.0% interest</strong> on the first <strong>$60,000</strong> of your combined CPF balances (with up to $20,000 from your OA).
+            </p>
+
+            <div class="white-math-card">
+              <div class="math-line">
+                <span>First $20k in Ordinary Account:</span>
+                <strong class="text-blue">2.5% + 1.0% = 3.50% p.a.</strong>
+              </div>
+              <div class="math-line">
+                <span>First $40k in Special Account:</span>
+                <strong class="text-pink">4.0% + 1.0% = 5.00% p.a.</strong>
+              </div>
+            </div>
+
+            <div class="washi-note-box">
+              <span class="note-pin">📌</span>
+              <strong>Golden Rule: Never drain your OA to $0!</strong>
+              <p>Keep a $20,000 buffer in OA so you don't lose that 3.5% yield. NECTAR'26 lets you toggle this with 1 click!</p>
+            </div>
+          </div>
+
+          <!-- 3 Easy Steps (Wide Mint Card) -->
+          <div class="guide-box-card card-mint full-width-guide">
+            <span class="cute-tag-pill">EASY AS 1-2-3</span>
+            <h3 class="guide-box-title">How to Use NECTAR'26 in 3 Steps</h3>
+
+            <div class="steps-3-columns">
+              <div class="step-column-box">
+                <span class="step-giant-number">1</span>
+                <h4>Enter Pay & Age</h4>
+                <p>Go to <strong>Simulator Studio</strong>. Slide your Age and Monthly Salary. We auto-apply the 2026 $8,000 ceiling.</p>
+              </div>
+
+              <div class="step-column-box">
+                <span class="step-giant-number">2</span>
+                <h4>Set Home Goal</h4>
+                <p>Hop over to <strong>Housing Check</strong>. Choose HDB (20%) or Bank (25%) and set your target purchase year.</p>
+              </div>
+
+              <div class="step-column-box">
+                <span class="step-giant-number">3</span>
+                <h4>Review & Celebrate</h4>
+                <p>Check <strong>Milestones</strong> to see your retirement forecast, avoid cash shortfalls, and celebrate growth!</p>
+              </div>
+            </div>
+
+            <div class="guide-cta-row">
+              <button class="bouncy-btn btn-pink" data-page="simulator">Try Simulator Studio Now →</button>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           PAGE 3: SIMULATOR STUDIO (Pastel Interactive Sliders)
+           =================================================================== -->
+      <section class="scrapbook-page" id="page-simulator">
+        <div class="page-title-banner">
+          <span class="banner-subtag">PERSONALIZED ENGINE</span>
+          <h2 class="banner-title">✨ Simulator Studio</h2>
+          <p class="banner-desc">Adjust your monthly salary, current balances, and watch your wealth compound in real time with 2026 statutory rates.</p>
+        </div>
+
+        <div class="studio-two-column">
+          
+          <!-- Controls Panel (Warm Cream Paper Card) -->
+          <div class="scrapbook-panel-card card-butter">
+            <div class="panel-header">
+              <span class="cute-tag-pill">YOUR INPUTS</span>
+              <h3 class="panel-title">Profile & Salary Settings</h3>
+            </div>
+
+            <form class="studio-controls-form" onsubmit="return false;">
+              
+              <!-- Age Slider -->
+              <div class="cute-input-group">
+                <div class="label-row">
+                  <label for="simAge">Current Age</label>
+                  <span class="range-bubble" id="valSimAge">30 yrs</span>
+                </div>
+                <input type="range" id="simAge" min="20" max="65" value="30" class="bubbly-range" />
+              </div>
+
+              <!-- Salary Slider with $8k Cap Indicator -->
+              <div class="cute-input-group">
+                <div class="label-row">
+                  <label for="simSalary">Monthly Gross Salary ($)</label>
+                  <span class="range-bubble bubble-pink" id="valSimSalary">$6,500</span>
+                </div>
+                <input type="range" id="simSalary" min="2000" max="15000" step="100" value="6500" class="bubbly-range" />
+                <div class="range-subhint">✷ 2026 Ordinary Wage (OW) Ceiling: $8,000 / month</div>
+              </div>
+
+              <!-- OA and SA Balances -->
+              <div class="cute-input-row-2">
+                <div class="cute-input-group">
+                  <label for="simOA">Ordinary Account (OA) $</label>
+                  <input type="number" id="simOA" value="45000" min="0" step="1000" class="bubbly-input" />
+                </div>
+                <div class="cute-input-group">
+                  <label for="simSA">Special Account (SA) $</label>
+                  <input type="number" id="simSA" value="25000" min="0" step="1000" class="bubbly-input" />
+                </div>
+              </div>
+
+              <!-- Growth & Horizon -->
+              <div class="cute-input-row-2">
+                <div class="cute-input-group">
+                  <div class="label-row">
+                    <label for="simIncrement">Salary Growth</label>
+                    <span class="range-bubble" id="valSimIncrement">3.0%</span>
+                  </div>
+                  <input type="range" id="simIncrement" min="0" max="10" step="0.5" value="3" class="bubbly-range" />
+                </div>
+                <div class="cute-input-group">
+                  <div class="label-row">
+                    <label for="simHorizon">Timeline</label>
+                    <span class="range-bubble" id="valSimHorizon">5 Years</span>
+                  </div>
+                  <input type="range" id="simHorizon" min="1" max="20" value="5" class="bubbly-range" />
+                </div>
+              </div>
+
+              <div class="form-bottom-actions">
+                <button type="button" class="bouncy-btn btn-pink" id="btnRunStudioSim">Recalculate Projections ✨</button>
+                <button type="button" class="bouncy-btn btn-blue" data-page="housing">Configure Housing Goal 🏡</button>
+              </div>
+            </form>
+          </div>
+
+          <!-- Live Results Panel (Pastel Mint Card) -->
+          <div class="scrapbook-panel-card card-mint">
+            <div class="panel-header">
+              <span class="cute-tag-pill pill-mint">LIVE RESULTS</span>
+              <h3 class="panel-title">Your Future Wealth Nest</h3>
+            </div>
+
+            <div class="big-nest-box">
+              <span class="nest-label">PROJECTED TOTAL CPF WEALTH</span>
+              <span class="nest-value" id="studioTotalCpf">$125,230</span>
+              <span class="nest-sub">Fully guaranteed by the Singapore Government</span>
+            </div>
+
+            <!-- Mini Accounts Breakdown -->
+            <div class="mini-accounts-grid">
+              <div class="mini-account-card">
+                <span class="acc-tag text-blue">ORDINARY (OA)</span>
+                <span class="acc-num" id="studioOaBal">$16,215</span>
+                <span class="acc-sub">For Housing & Loans</span>
+              </div>
+
+              <div class="mini-account-card">
+                <span class="acc-tag text-gold">SPECIAL (SA)</span>
+                <span class="acc-num" id="studioSaBal">$60,886</span>
+                <span class="acc-sub">For 4.0% Retirement</span>
+              </div>
+
+              <div class="mini-account-card">
+                <span class="acc-tag text-pink">INTEREST EARNED</span>
+                <span class="acc-num" id="studioInterestVal">+$14,712</span>
+                <span class="acc-sub">Compounded Returns</span>
+              </div>
+            </div>
+
+            <!-- Bonus Interest Sticker Box -->
+            <div class="bonus-sticker-box">
+              <span class="bonus-sparkle">★ BONUS COINS UNLOCKED</span>
+              <p id="studioBonusText">Includes $2,617 in extra 1% bonus yield!</p>
+            </div>
+
+            <div class="panel-footer-btn">
+              <button class="bouncy-btn btn-cream" data-page="analytics">View Full Yearly Projections & Table →</button>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           PAGE 4: HOUSING ANALYZER (Downpayment Liquidity Studio)
+           =================================================================== -->
+      <section class="scrapbook-page" id="page-housing">
+        <div class="page-title-banner">
+          <span class="banner-subtag">NO DOWNPAYMENT SHORTFALLS</span>
+          <h2 class="banner-title">🏡 Housing Downpayment Analyzer</h2>
+          <p class="banner-desc">Simulate your CPF Ordinary Account savings against your dream flat downpayment. Avoid nasty cash surprises!</p>
+        </div>
+
+        <div class="studio-two-column">
+          
+          <!-- Property Goals (Pastel Pink Card) -->
+          <div class="scrapbook-panel-card card-pink">
+            <div class="panel-header">
+              <span class="cute-tag-pill pill-red">PROPERTY GOAL</span>
+              <h3 class="panel-title">Flat Price & Loan Details</h3>
+            </div>
+
+            <div class="cute-input-row-2">
+              <div class="cute-input-group">
+                <label for="housePrice">Property Price ($)</label>
+                <input type="number" id="housePrice" value="500000" min="0" step="10000" class="bubbly-input" />
+              </div>
+              <div class="cute-input-group">
+                <div class="label-row">
+                  <label for="houseYear">Purchase In</label>
+                  <span class="range-bubble" id="valHouseYear">Year 2</span>
+                </div>
+                <input type="range" id="houseYear" min="1" max="10" value="2" class="bubbly-range" />
+              </div>
+            </div>
+
+            <!-- Loan Type Buttons -->
+            <div class="cute-input-group" style="margin-top: 14px;">
+              <label>Loan Type (Downpayment Requirement)</label>
+              <div class="cute-toggle-pills">
+                <button type="button" class="loan-pill active" data-pct="0.20">HDB Loan (20% downpayment)</button>
+                <button type="button" class="loan-pill" data-pct="0.25">Bank Loan (25% downpayment)</button>
+              </div>
+            </div>
+
+            <div class="cute-input-group" style="margin-top: 14px;">
+              <div class="label-row">
+                <label for="houseMortgage">Est. Monthly Mortgage (OA)</label>
+                <span class="range-bubble" id="valHouseMortgage">$1,200/mo</span>
+              </div>
+              <input type="range" id="houseMortgage" min="0" max="3000" step="50" value="1200" class="bubbly-range" />
+            </div>
+
+            <!-- $20k Buffer Switch -->
+            <div class="cute-switch-card">
+              <label class="switch-control">
+                <input type="checkbox" id="houseToggleBuffer" checked />
+                <span class="switch-pill"></span>
+                <span class="switch-label"><strong>Retain $20,000 OA Buffer</strong> (Keep 3.5% yield)</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Downpayment Verdict (Sky Blue Card) -->
+          <div class="scrapbook-panel-card card-blue">
+            <div class="panel-header">
+              <span class="cute-tag-pill pill-blue">LIQUIDITY VERDICT</span>
+              <h3 class="panel-title">Downpayment Affordability</h3>
+            </div>
+
+            <div class="verdict-status-container">
+              <span class="verdict-chip chip-warning" id="housingVerdictChip">CHECKING...</span>
+            </div>
+
+            <p class="verdict-narrative-text" id="housingVerdictNarrative">
+              Simulating your Ordinary Account accumulation against required downpayment...
+            </p>
+
+            <!-- Progress Meter -->
+            <div class="meter-scrapbook-block">
+              <div class="meter-info-row">
+                <span>Downpayment Needed: <strong id="houseReqDownpayment">$100,000</strong></span>
+                <span>Usable OA: <strong id="houseUsableOA">$64,504</strong></span>
+              </div>
+              <div class="bubbly-meter-track">
+                <div class="bubbly-meter-fill" id="houseMeterFill" style="width: 65%;"></div>
+              </div>
+              <div class="meter-status-note" id="houseShortfallText">Shortfall: $15,496 (Prepare cash top-up)</div>
+            </div>
+
+            <!-- Opportunity Cost Box -->
+            <div class="white-gain-box">
+              <div class="gain-header">
+                <strong>💡 Buffer Benefit</strong>
+                <span class="gain-badge">+3.5% Yield</span>
+              </div>
+              <p>
+                By keeping $20k in OA, you earn an extra <strong>~$700 each year</strong>. That's over <strong>$3,750</strong> in 5 years just by not wiping your OA to zero!
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           PAGE 5: ANALYTICS & MILESTONES (Pastel Curves & Milestones)
+           =================================================================== -->
+      <section class="scrapbook-page" id="page-analytics">
+        <div class="page-title-banner">
+          <span class="banner-subtag">GROWTH & RETIREMENT</span>
+          <h2 class="banner-title">📊 Analytics & CPF Milestones</h2>
+          <p class="banner-desc">Celebrate your milestones as you build wealth toward Singapore's Basic & Full Retirement Sums.</p>
+        </div>
+
+        <!-- Milestones Row -->
+        <div class="milestones-row-cards">
+          
+          <div class="cute-milestone-card card-yellow" id="cardBrs">
+            <div class="milestone-badge-top">BASIC RETIREMENT SUM (BRS)</div>
+            <div class="milestone-dollar">$106,500</div>
+            <div class="milestone-achieved-badge" id="statusBrs">Achieved: Year 2 🌟</div>
+          </div>
+
+          <div class="cute-milestone-card card-pink" id="cardFrs">
+            <div class="milestone-badge-top">FULL RETIREMENT SUM (FRS)</div>
+            <div class="milestone-dollar">$213,000</div>
+            <div class="milestone-achieved-badge" id="statusFrs">Achieved: Year 5 🏆</div>
+          </div>
+
+          <div class="cute-milestone-card card-mint" id="cardErs">
+            <div class="milestone-badge-top">ENHANCED RETIREMENT SUM (ERS)</div>
+            <div class="milestone-dollar">$426,000</div>
+            <div class="milestone-achieved-badge" id="statusErs">Beyond Year 5 🚀</div>
+          </div>
+
+        </div>
+
+        <!-- Trajectory Chart Card -->
+        <div class="scrapbook-panel-card card-butter" style="margin-top: 24px;">
+          <div class="panel-header">
+            <span class="cute-tag-pill">GROWTH TRAJECTORY</span>
+            <h3 class="panel-title">Ordinary vs Special Account Compounding</h3>
+          </div>
+
+          <div class="chart-wrapper-cute">
+            <canvas id="analyticsChart" width="800" height="280"></canvas>
+          </div>
+
+          <div class="chart-cute-legend">
+            <span class="legend-item"><span class="legend-dot dot-blue"></span> Ordinary Account (OA 2.5%)</span>
+            <span class="legend-item"><span class="legend-dot dot-gold"></span> Special Account (SA 4.0%)</span>
+            <span class="legend-item"><span class="legend-dot dot-pink"></span> Total Combined Wealth</span>
+          </div>
+        </div>
+
+        <!-- Full Year-by-Year Table -->
+        <div class="scrapbook-panel-card card-blue" style="margin-top: 24px;">
+          <div class="panel-header">
+            <span class="cute-tag-pill pill-blue">COMPLETE PROJECTIONS</span>
+            <h3 class="panel-title">Year-by-Year Tabular Breakdown</h3>
+          </div>
+
+          <div class="table-scrapbook-wrapper">
+            <table class="cute-styled-table" id="analyticsTable">
+              <thead>
+                <tr>
+                  <th>Year</th>
+                  <th>Age</th>
+                  <th>Salary</th>
+                  <th>OA Balance</th>
+                  <th>SA Balance</th>
+                  <th>Total CPF</th>
+                  <th>OA Interest</th>
+                  <th>SA Interest</th>
+                  <th>1% Bonus</th>
+                </tr>
+              </thead>
+              <tbody id="analyticsTableBody">
+                <!-- Populated via JavaScript -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </section>
+
+    </main>
+
+    <!-- CUTE SCRAPBOOK FOOTER -->
+    <footer class="scrapbook-footer">
+      <div class="footer-inner">
+        <div class="footer-left">
+          <span class="footer-title">pretty little cpf maximizer ✷</span>
+          <p class="footer-sub">NECTAR'26 • Singapore Statutory Wealth Simulation Engine • 100% Client-Side & Confidential</p>
+        </div>
+        <div class="footer-right">
+          <a href="#simulator" class="footer-pill-btn">Back to Top ↗</a>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
