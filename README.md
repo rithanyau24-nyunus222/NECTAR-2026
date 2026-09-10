@@ -1,87 +1,65 @@
-# 🍯 NECTAR'26 — Singapore CPF Liquidity & Wealth Engine
+<div align="center">
 
-> A cute, human-friendly fintech prototype that turns bureaucratic Singapore Central Provident Fund (CPF) statutory rules into a high-precision wealth and housing liquidity optimization engine.
+# 🪐 CPF Gravity Engine (NECTAR 2026)
+### Quantitative CPF OA $\rightarrow$ SA Yield & Housing Liquidity Optimizer
 
-![NECTAR'26 Cute Singapore CPF Simulator](frontend/assets/stickers/merlion_sticker.svg)
+[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-Launch_Application-10b981?style=for-the-badge)](https://rithanyau24-nyunus222.github.io/NECTAR-2026/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
+[![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
----
+### [👉 Click Here to Launch the Live Web App](https://rithanyau24-nyunus222.github.io/NECTAR-2026/)
 
-## 💡 What It Does
-In Singapore, up to **37% of monthly income** is locked into the Central Provident Fund (CPF). While it's the largest forced-savings vehicle for citizens, young home-buyers frequently fall into the **"OA Wipeout Trap"**—emptying their Ordinary Account to $0 for home downpayments and unknowingly sacrificing **$3,750 to $8,200+** in government bonus interest.
-
-**NECTAR'26** models exact statutory allocation rules, multi-year compounding, and housing downpayment liquidity in real-time, helping users protect their capital while avoiding surprise cash shortfalls for BTO and resale flats.
-
----
-
-## 🛠️ Technical Architecture & Approach
-
-- **Discrete-Time Simulation Engine**:
-  Built with **Python 3.14** and **NumPy**, the engine models month-by-month cashflow iterations over a 1-to-20 year projection horizon. It simulates statutory employee/employer wage deductions, Ordinary Wage (OW) ceiling caps (calibrated to the 2026 $8,000 statutory limit), and age-banded allocation schedules across OA, SA, and MA.
-
-- **Dynamic Interest & Allocation Algorithm**:
-  Implements the complex non-linear **1.0% extra bonus interest** protocol on the first $60,000 of combined CPF balances (capped at $20,000 for OA), factoring in monthly compounding, opportunity cost matrices, and automatic routing of bonus yield to the Special Account (SA).
-
-- **Constrained Liquidity & Buffer Optimization**:
-  Features a liquidity stress-testing module that evaluates downpayment requirements (20% HDB Concessionary vs. 25% Bank loans) against projected usable OA, computing the exact opportunity cost of draining vs. preserving the **$20,000 OA buffer** (earning 3.5% effective risk-free yield).
-
-- **High-Performance Asynchronous REST API**:
-  Built using **FastAPI** and **Pydantic v2** for strict schema validation, sub-millisecond endpoint responses, and auto-generated OpenAPI documentation.
-
-- **Human-Centric Client Experience**:
-  Responsive multi-page single-page application (SPA) featuring custom HTML5 Canvas vector curves, real-time debounced simulation calls, and a whimsical scrapbook aesthetic inspired by modern creative studios with custom Singapore-themed vector stickers.
+</div>
 
 ---
 
-## 🚀 Quickstart
+## 📌 Problem Overview
 
-### 1. Clone & Setup
+Singaporeans navigate a structural trade-off between retirement compounding and homeownership liquidity within the Central Provident Fund (CPF):
+
+* **Ordinary Account (OA)** yields **2.5% p.a.** and funds HDB downpayments and monthly mortgage obligations.
+* **Special Account (SA)** yields **4.0% p.a.** (plus tiered bonus interest) to accelerate retirement wealth.
+* **The Constraint**: Transfers from OA to SA are strictly **irreversible**. Transferring too aggressively risks cash insolvency during property purchases or monthly loan servicing.
+
+**NECTAR 2026 (CPF Gravity Engine)** implements constrained non-linear optimization to determine the exact annual transfer limit that maximizes wealth at age 55 without violating housing cash-flow solvency.
+
+---
+
+## ⚡ Key Highlights
+
+* **Discrete-Event Simulation Engine**: Models monthly compounding, tiered extra interest ($1\%$ on the first $\$60\text{k}$ combined balances, capped at $\$20\text{k}$ for OA), salary ceilings ($\$8\text{,000}/\text{mo}$ OW cap), and statutory age contribution shifts.
+* **Bounded Optimization**: Implements `scipy.optimize.minimize_scalar` with an asymptotic penalty barrier function ensuring OA balances remain strictly non-negative throughout housing amortisation.
+* **High-Performance Architecture**: Built with a lightweight FastAPI REST API and a responsive front-end dashboard featuring real-time debounced simulation calls and dynamic vector visualizations.
+
+---
+
+## 🛠️ System Architecture & Tech Stack
+
+| Layer | Technologies |
+|---|---|
+| **Mathematical Engine** | Python 3.11+, SciPy (`minimize_scalar`), NumPy, Pydantic v2 |
+| **Backend REST API** | FastAPI, Uvicorn (ASGI) |
+| **Frontend Client** | HTML5 Canvas, Modern ES6+ JavaScript (`app.js`), CSS3 (`style.css`) |
+| **DevOps & Hosting** | GitHub Pages (Frontend), Docker-ready for Cloud Run |
+
+---
+
+## 🚀 Local Quickstart
+
+### 1. Clone & Set Up Virtual Environment
+
 ```bash
-git clone https://github.com/YOUR_USERNAME/nectar-sg-2026.git
-cd nectar-sg-2026
+git clone [https://github.com/rithanyau24-nyunus222/NECTAR-2026.git](https://github.com/rithanyau24-nyunus222/NECTAR-2026.git)
+cd NECTAR-2026
 
-# Create virtual environment
+# Create and activate virtual environment
 python -m venv venv
-
-# Activate virtual environment
 # On Windows:
 .\venv\Scripts\activate
 # On macOS/Linux:
 source venv/bin/activate
 
-# Install dependencies
-pip install -r backend/requirements.txt
-```
+# Install requirements
+pip install -r requirements.txt
 
-### 2. Run the Application
-```bash
-uvicorn backend.main:app --host 127.0.0.1 --port 8000 --reload
-```
-
-### 3. Open in Browser
-- **Web App**: [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
-- **Interactive Swagger API Docs**: [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
-
----
-
-## 📁 Repository Structure
-
-```
-NECTAR SG 2026/
-├── backend/
-│   ├── cpf_engine.py       # Core mathematical formulas & simulation logic
-│   ├── main.py             # FastAPI backend with REST endpoints & static mount
-│   ├── requirements.txt    # Python dependencies
-│   └── test_api.py         # Automated integration test script
-├── frontend/
-│   ├── assets/             # Generated stickers and visuals
-│   ├── index.html          # Multi-page scrapbook layout
-│   ├── style.css           # Cute pastel design system & washi tape styles
-│   └── app.js              # Client-side router, debounced calls & canvas chart
-├── .gitignore              # Ignores venv and temporary files
-└── README.md               # Project documentation
-```
-
----
-
-## 📜 License
-MIT License. Built for Singapore CPF education and wealth planning.
